@@ -34,8 +34,29 @@
             Введите длину >
             <input type="text" id="length-input">
         </p>
-        <p id="invalid-length" class="hidden">
-            Введенное значение не подходит в качестве длины круга!
+        <p id="invalid-length-status" class="hidden error-display">
+            [!] Введенное значение не подходит в качестве длины круга!
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="task-2">
+        <p>
+            Исходное число:
+            <span id="source-number-display"></span>
+        </p>
+        
+        <p>
+            Обработанное число:
+            <span id="computed-number-display"></span>
+        </p>
+        <p>
+            Введите трехзначное положительное число >
+            <input type="text" id="some-num-input">
+        </p>
+        <p id="invalid-number-status" class="hidden error-display">
+            [!] Введенное значение не является валидным 3-х значным числом!
         </p>
     </div>
 </body>
