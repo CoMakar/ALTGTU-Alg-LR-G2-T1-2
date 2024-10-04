@@ -103,6 +103,13 @@ window.onload = () => {
         let computed_number = parsed_number.toString().split("");
         computed_number.unshift(computed_number.pop());
         computed_number = computed_number.join("");
+    
+        // pure mathematical approach
+        // let computed_number = parsed_number % 10 * 100 +
+        //     (Math.floor(parsed_number / 100)) +
+        //     Math.floor(parsed_number % 100 / 10) * 10
+        // computed_number = computed_number.toString()
+        // but this will not work for zero padded numbers such as 100 and etc.
 
         console.info(`Computed number: ${computed_number}`);
 
