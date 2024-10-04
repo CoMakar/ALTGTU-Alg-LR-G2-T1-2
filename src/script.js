@@ -87,13 +87,9 @@ window.onload = () => {
             return;
         }
 
-        // Evil array engineering
-        // let computed_number = parsed_number.toString().split("");
-        // computed_number.push(computed_number.reverse().pop());
-        // computed_number = computed_number.join("");
-
-        // Or just
-        let computed_number = parsed_number.toString().split("").reverse().join("");
+        let computed_number = parsed_number.toString().split("");
+        computed_number.unshift(computed_number.pop());
+        computed_number = computed_number.join("");
 
         console.info(`Computed number: ${computed_number}`);
 
