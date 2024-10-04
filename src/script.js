@@ -31,6 +31,12 @@ window.onload = () => {
         }
 
         console.info(`Parsed length: ${parsed_length}`);
+
+        if (parsed_length <= 0) {
+            console.error("Length must be greater than zero.");
+            invalid_length_elem.classList.remove("hidden");
+            return;
+        }
         
         let radius = parsed_length / (2 * PI);
         let square = PI * radius * radius;
