@@ -20,19 +20,22 @@
     <div class="task">
         <p>
             Длина:
-            <span id="length-display"></span>
+            <span id="length-display">0</span>
+            <span>у.е</span>
         </p>
         <p>
             Радиус:
-            <span id="radius-display"></span>
+            <span id="radius-display">0</span>
+            <span>у.е</span>
         </p>
         <p>
             Площадь:
-            <span id="square-display"></span>
+            <span id="square-display">0</span>
+            <span>у.е^2</span>
         </p>
         <p>
             Введите длину >
-            <input type="text" id="length-input">
+            <input type="text" autocomplete="off" id="length-input">
         </p>
         <p id="invalid-length-status" class="hidden error-display">
             [!] Введенное значение не подходит в качестве длины круга!
@@ -53,7 +56,7 @@
         </p>
         <p>
             Введите трехзначное положительное число >
-            <input type="text" id="some-num-input">
+            <input type="text" autocomplete="off" id="some-num-input">
         </p>
         <p id="invalid-number-status" class="hidden error-display">
             [!] Введенное значение не является валидным 3-х значным числом!

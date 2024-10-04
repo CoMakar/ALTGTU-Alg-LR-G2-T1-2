@@ -23,9 +23,9 @@ window.onload = () => {
         invalid_length_status.classList.add("hidden");
 
         if (length_input.value === "") {
-            radius_display.textContent = "";
-            square_display.textContent = "";
-            length_display.textContent = "";
+            radius_display.textContent = "0";
+            square_display.textContent = "0";
+            length_display.textContent = "0";
             return;
         }
 
