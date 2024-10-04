@@ -6,6 +6,12 @@ const PI = 3.14;
 window.onload = () => {
     console.info("Window loaded");
 
+    let blink = document.getElementById("blink");
+
+    setInterval(() => { 
+        blink.classList.toggle("invisible");
+    }, 1000)
+
     let length_input = document.getElementById("length-input");
     let length_display = document.getElementById("length-display");
     let radius_display = document.getElementById("radius-display");
