@@ -4,34 +4,41 @@
 }
 
 :root {
-    --default-bg: #50459b;
-    --default-fg: #887ecb;
+    --c64-bg: #50459b;
+    --c64-fg: #887ecb;
+    --c64-red: #801d1a;
+    --c64-black: #06060d;
+}
+
+.hidden {
+    display: none !important;
 }
 
 body {
     font-family: PixelFont;
     font-size: 16pt;
-    color: var(--default-fg);
-    background-color: var(--default-bg);
+    color: var(--c64-fg);
+    background-color: var(--c64-bg);
     border: 32px solid;
     min-height: 100vh;
     padding: 4px;
+    line-height: 1;
 }
 
 hr {
     border: none;
-    border-top: 4px solid var(--default-fg);
+    border-top: 4px solid var(--c64-fg);
     overflow: visible;
     text-align: center;
     height: 8px;
 }
 
 hr::after {
-    background-color: var(--default-bg);
+    background-color: var(--c64-bg);
     content: "#";
     padding: 0 8px;
     position: relative;
-    top: -16px;
+    top: -12px;
 }
 
 h1 {
@@ -56,4 +63,24 @@ h2 {
 
 h2::before {
     content: "> ";
+}
+
+.task-1 p::before {
+    content: "$";
+}
+
+input {
+    color: var(--c64-fg);
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border-bottom: 4px solid var(--c64-fg);
+  }
+
+#invalid-length {
+    color: var(--c64-black);
+    background-color: var(--c64-red);
 }
