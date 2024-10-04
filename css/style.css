@@ -1,0 +1,59 @@
+@font-face {
+    font-family: PixelFont;
+    src: url(../assets/fonts/Commodore\ 64.ttf);
+}
+
+:root {
+    --default-bg: #50459b;
+    --default-fg: #887ecb;
+}
+
+body {
+    font-family: PixelFont;
+    font-size: 16pt;
+    color: var(--default-fg);
+    background-color: var(--default-bg);
+    border: 32px solid;
+    min-height: 100vh;
+    padding: 4px;
+}
+
+hr {
+    border: none;
+    border-top: 4px solid var(--default-fg);
+    overflow: visible;
+    text-align: center;
+    height: 8px;
+}
+
+hr::after {
+    background-color: var(--default-bg);
+    content: "#";
+    padding: 0 8px;
+    position: relative;
+    top: -16px;
+}
+
+h1 {
+    font-size: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+h1::before {
+    content: "*** ";
+}
+
+h1::after {
+    content: " ***";
+}
+
+h2 {
+    font-size: 100%;
+    margin-bottom: 16px;
+}
+
+h2::before {
+    content: "> ";
+}
